@@ -1,0 +1,83 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif; /* Optional: Define font family */
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2em; /* Optional: Set font size for heading */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section {
+    width: calc(33.33% - 20px); /* Adjust as needed based on desired spacing */
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid black;
+    background-color: #B2BEB5; /* Set your desired background color */
+}
+
+h2 {
+    font-size: 125%; /* Optional: Set font size for section title */
+    background-color: #ddd; /* Set a unique color for section title background */
+    padding: 10px;
+    position: absolute;
+    top: -20px;
+    right: -1px;
+    border: 1px solid black;
+}
+
+p {
+    padding: 10px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 991px) {
+    .section {
+        width: calc(50% - 20px);
+    }
+    .section:nth-child(3) {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: calc(100% - 20px);
+    }
+    h2 {
+        font-size: 150%; /* Adjust font size for mobile */
+    }
+}
+
+
+/* Other styles remain unchanged */
+
+.section:nth-child(1) h2 {
+    background-color: pink; /* Set a unique color for Chicken title */
+}
+
+.section:nth-child(2) h2 {
+    background-color: red; /* Set a unique color for Beef title */
+}
+
+.section:nth-child(3) h2 {
+    background-color: yellow; /* Set a unique color for Sushi title */
+}
