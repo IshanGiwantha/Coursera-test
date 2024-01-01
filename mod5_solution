@@ -1,0 +1,19 @@
+//html file
+
+<a href="#" onclick="redirectToRandomCategory();">Specials</a>
+
+//java script file
+
+function redirectToRandomCategory() {
+    // Array of possible category short_names (replace this with your actual category names)
+    var categories = ["Lunch", "Dinner", "Sushi", "Breakfast", /* Add more categories here */];
+
+    // Generate a random index to select a random category from the array
+    var randomIndex = Math.floor(Math.random() * categories.length);
+
+    // Get the randomly selected category short_name
+    var randomCategoryShortName = categories[randomIndex];
+
+    // Call the loadMenuItems function with the random category short_name
+    $dc.loadMenuItems(randomCategoryShortName);
+}
