@@ -1,9 +1,8 @@
 //html file
-
 <a href="#" onclick="redirectToRandomCategory();">Specials</a>
 
-//java script file
 
+//java script file
 function redirectToRandomCategory() {
     // Array of possible category short_names (replace this with your actual category names)
     var categories = ["Lunch", "Dinner", "Sushi", "Breakfast", /* Add more categories here */];
